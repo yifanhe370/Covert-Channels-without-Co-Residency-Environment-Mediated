@@ -30,22 +30,6 @@ All CSV files within the same folder are then averaged to obtain a representativ
 
 ---
 
-## SNR Calculation
-
-For a given antenna layout and cycle count:
-
-- The average noise power \( P_0 \) is obtained from the `*_0` folder;
-- The average total power \( P_1 \) is obtained from the `*_1` folder;
-- The signal power is estimated as \( P_s = P_1 - P_0 \);
-- The SNR is calculated as
-  \[
-  \mathrm{SNR}_{\mathrm{dB}} = 10 \log_{10}\left(\frac{P_s}{P_0}\right).
-  \]
-
-Only results with positive estimated signal power are retained.
-
----
-
 ## Visualization
 
 The calculated SNR values are plotted as a function of cycle count.  
